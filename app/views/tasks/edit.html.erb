@@ -1,0 +1,8 @@
+<h1>Edit</h1>
+
+<%= form_for @task do |f| %>
+  Task title  : <%= f.text_field :title %><br />
+  Description : <%= f.text_field :details %><br />
+  Done        : <%= f.check_box :completed %><br />
+  <%= f.submit %>
+<% end %>
